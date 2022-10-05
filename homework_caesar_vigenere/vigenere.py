@@ -43,6 +43,5 @@ def decrypt_vigenere(ciphertext: str, keyword: str) -> str:
             plaintext += ascii_uppercase[(ascii_uppercase.find(ciphertext[i]) - ascii_uppercase.find(keyword[i]) + 26) % 26]
         else:
             plaintext += ciphertext[i]
-    # PUT YOUR CODE HERE
     return plaintext
 
